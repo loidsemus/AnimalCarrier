@@ -1,0 +1,11 @@
+name: AnimalCarrier
+version: @version@
+main: me.loidsemus.animalcarrier.AnimalCarrier
+api-version: '1.13'
+authors: [loidsemus]
+description: Getting animals to follow you is slow & annoying
+
+permissions:
+  animalcarrier.use:
+    description: Pick up and put down animals
+    default: true
