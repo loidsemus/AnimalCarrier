@@ -64,6 +64,11 @@ public class InteractListener implements Listener {
             return;
         }
 
+        Material pickupMaterial = plugin.getMainConfig().getPickupItem();
+        if (!player.getInventory().getItemInMainHand().getType().equals(pickupMaterial)) {
+            return;
+        }
+
         if (plugin.getPlayerManager().getEntitiesCarriedByPlayer(player).isEmpty()) {
             player.sendMessage(Messages.get(LangKey.NO_ANIMALS_CARRIED, true));
             return;
