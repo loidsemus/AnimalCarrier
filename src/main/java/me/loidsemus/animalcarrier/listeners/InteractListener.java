@@ -30,8 +30,6 @@ public class InteractListener implements Listener {
             return;
         }
 
-        System.out.println(plugin.getPlayerManager().getEntitiesCarriedByPlayer(player).toString());
-
         Material pickupMaterial = plugin.getMainConfig().getPickupItem();
 
         if (!player.getInventory().getItemInMainHand().getType().equals(pickupMaterial)) {
